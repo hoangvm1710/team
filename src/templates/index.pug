@@ -1,0 +1,113 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
+	section.maykhoan-banner
+		.item
+			.container
+				.row
+					.col-10
+						h2 Chúng tôi là
+							br
+							| 
+							span Fullstack Việt Nam
+						p Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.
+						a(href="#")
+							button.btn.btn-light XEM CHI TIẾT
+	section.maykhoan-slider
+		.owl-carousel.owl-theme
+			.item
+				.text
+					h2 USA'S HOTTEST JEANS
+					a(href="#")
+						span SHOPPING NOW
+			.item
+				.text
+					h2 USA'S HOTTEST JEANS
+					a(href="#")
+						span SHOPPING NOW
+			.item
+				.text
+					h2 USA'S HOTTEST JEANS
+					a(href="#")
+						span SHOPPING NOW
+	section.maykhoan-service
+		.container
+			.row.text1
+				h2 FULLSTACK VIETNAM
+			.row.text2
+				.col-sm-6.col-md-3
+					a(href="#")
+						figure
+							.item
+								img.img-fluid(src="./img/home_body_1.png", alt="")
+							figcaption
+								h5 TRUNG TÂM ĐÀO TẠO IT CHUYÊN NGHIỆP
+								span $36.59
+				.col-sm.col-md-3
+					a(href="#")
+						figure
+							.item
+								img.img-fluid(src="./img/home_body_2.png", alt="")
+							figcaption
+								h5 TRUNG TÂM ĐÀO TẠO IT CHUYÊN NGHIỆP
+								span $36.59
+				.col-sm-6.col-md-3
+					a(href="#")
+						figure
+							.item
+								img.img-fluid(src="./img/home_body_3.png", alt="")
+							figcaption
+								h5 TRUNG TÂM ĐÀO TẠO IT CHUYÊN NGHIỆP
+								span $36.59
+				.col-sm-6.col-md-3
+					a(href="#")
+						figure
+							.item
+								img.img-fluid(src="./img/home_body_4.png", alt="")
+							figcaption
+								h5 TRUNG TÂM ĐÀO TẠO IT CHUYÊN NGHIỆP
+								span $36.59
+			.row.text3
+				.col
+					.item
+						.title
+							h3 HẠNH PHÚC PHÍA SAU
+						.title2
+							p USA'S HOTTEST JEANS
+						.box
+							.box1
+								p SALE
+							.box2
+								p 20%
+			.row.text4
+				.col-xs.col-md-4
+					figure
+						img.img-fluid(src="./img/home_bot_left.png", alt="")
+				.col-xs.col-md-8
+					.text-bot
+						.bot-1
+							h4 HẠNH PHÚC PHÍA SAU
+						.bot-2
+							p Want the most stylish designs in metrosexual and gay apparel? Looking for the sexiest gay outfits and pride outfits? Differio has the trendiest gay pride apparel from gay pride clothing to lgbt clothing. Shop our gay menswear collection for the hottest gay pride outfits in gay clothing for men.
+			.row.text1
+				h2 FULLSTACK VIETNAM
+	section.maykhoan-show
+		.container
+			.row
+				.col
+					.item
+						.owl-carousel.owl-theme
+							- for(x=1;x<7;x++)
+									.item1
+										if (x < 7)
+											a(href="#")
+												figure
+													img(src="./img/clients_"+x+".png", alt="")

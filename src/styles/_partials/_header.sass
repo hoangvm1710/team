@@ -1,0 +1,29 @@
+header
+	.navbar
+		+pad(null 0)
+	.navbar-brand
+		img 
+			max-height: 2rem
+			filter: grayscale(100%)
+	.navbar-collapse
+		text-align: center
+		.nav-link
+			font-size: 1.2rem
+			font-weight: 600
+			margin: .2rem
+			&:hover
+				color: rgba(0, 0, 0, 0.5) !important
+	+media-breakpoint-up(md)
+		.navbar-brand
+			img 
+				max-height: 3rem
+				&:hover
+					filter: grayscale(0)
+					transition: all ease-in-out 1s
+		.navbar-collapse
+			.nav-link
+				&:hover
+					background: #000000 !important
+					color: #fff !important
+					border-radius: 1.2rem .3rem
+					transition: all ease-in-out 1s

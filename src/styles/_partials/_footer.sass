@@ -1,0 +1,106 @@
+footer
+	background: #373737
+	position: relative
+	.col-6.col-md-4
+		h5
+			color: yellow
+			font-weight: 700
+		ul
+			li
+				span
+					color: lighten(gray,10%) !important
+		ul
+			li
+				a
+					color: lighten(gray,10%) !important
+					text-decoration: none
+	+media-breakpoint-up(md)
+		.col-6.col-md-4
+			ul
+				li
+					a
+						&:hover
+							color: #fff !important
+	.icon
+		+pos(abs, 50% 20% null null)
+		.col
+			ul
+				li
+					a
+						i.fa.fa-twitter
+							width: 40px
+							height: 40px
+							background: gray
+							border-radius: 50%
+							text-align: center
+							line-height: 3rem
+							font-size: 1.5rem
+							color: #000
+						i.fa.fa-facebook
+							width: 40px
+							height: 40px
+							background: gray
+							border-radius: 50%
+							text-align: center
+							line-height: 3rem
+							font-size: 1.5rem
+							color: #000
+		+media-breakpoint-up(md)
+			+pos(abs, 25% 10% null null)
+			.col
+				ul
+					li
+						a
+							i.fa.fa-twitter
+								&:hover
+									background: yellow
+									transition: all ease-in-out 1s
+							i.fa.fa-facebook
+								&:hover
+									background: yellow
+									transition: all ease-in-out 1s
+	.bot
+		background: yellow
+		min-height: 100px
+		.row
+			position: relative
+			display: flex
+			justify-content: center
+			text-align: center
+			.col-sm.col-md-8
+				+pos(abs, 148% null null null)
+			.col-sm.col-md-4
+				+pos(abs, 35% 17% null null)
+				width: 70%
+				p
+					background: #000
+					color: #fff
+					width: 105%
+					padding: .5rem
+					button
+						margin-left: 42%
+	+media-breakpoint-up(md)
+		.bot
+			min-height: 80px
+			.row
+				.col-sm.col-md-8
+					+pos(abs, 70% null null -19%)
+				.col-sm.col-md-4
+					+pos(abs, 42% 1% null null)
+					width: 100%
+					p
+						padding: .5rem
+						text-align: left
+						button
+							margin-left: 54%
+							width: 5rem
+							font-weight: 700
+							&:hover
+								background: yellow
+								transition: all ease-in-out 1s
+
+				
+
+										
+
+				

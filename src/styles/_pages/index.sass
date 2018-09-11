@@ -1,0 +1,380 @@
+/////////////////////////////////
+// Phần Slider
+/////////////////////////////////
+body
+	font-family: 'Lato', sans-serif
+	.maykhoan-banner
+		.item
+			background-image:  url(https://raw.githubusercontent.com/anytricks/web3D/master/dist/img/home_banner_1.png)
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: center center
+			height: 50rem
+			width: 100%
+			position: relative
+			&:after
+						content: ''
+						display: block
+						width: 100%
+						height: 3px
+						background-color: #fff
+						position: absolute
+						top: 100%
+						margin: -2px
+			.container
+				.row
+					color: #fff
+					+pos(abs, 10rem 2rem null 2rem)
+					font-weight: 300
+				h1
+					font-size: 2.3rem
+					span
+						padding: .2rem
+						background-color: rgba(0, 64, 133, 0.22)
+				p
+					font-size: 1.2rem
+					background-color: rgba(14, 14, 14, 0.15)
+				button
+					width: 10rem
+					&:hover
+						background-color: #f8f9fa
+						border-color: #f8f9fa
+					&:focus
+						box-shadow: none !important
+					&:active
+						box-shadow: none !important
+			+media-breakpoint-up(sm)
+				.container
+					.row
+						+pos(abs, 5rem 15rem)
+						h2
+							font-size: 3rem
+							span
+								background-color: rgba(0, 64, 133, 0)
+						p
+							width: 25rem
+							background-color: rgba(0, 64, 133, 0)
+			+media-breakpoint-up(md)
+				.container
+					.row
+						+pos(abs, 12rem null null 15.2rem)
+	.maykhoan-slider
+		background: #000
+		min-height: 200px
+		.owl-carousel
+			padding: 1rem
+		.owl-theme
+			.owl-dots
+				+pos(abs, 75% null null 40%)
+				.owl-dot
+					span
+						width: 15px
+						height: 3px
+						margin: 5px 7px
+						background: #D6D6D6
+						display: block
+						-webkit-backface-visibility: visible
+						transition: opacity .2s ease
+						border-radius: 30px
+				.active
+					span
+						background: rgb(249, 255, 0) !important
+			.item
+				position: relative
+				background-image:  url(https://raw.githubusercontent.com/hiennpps06647/neta/master/dist/img/home_banner_2.png)
+				background-repeat: no-repeat
+				background-size: cover
+				background-position: center center
+				min-height: 150px
+				.text
+					text-align: left
+					+pos(abs, 3rem null null null)
+					h2
+						font-size: 1.8rem
+						background: #000;
+						color: #fff;
+						padding: .3rem;
+					a
+						color: #000;
+						background: rgba(255, 255, 0, 0.79)
+						padding: .6rem
+		+media-breakpoint-up(sm)
+			.owl-carousel
+				padding: 2rem
+				.owl-dots
+					+pos(abs, 70% null null 45%)
+		+media-breakpoint-up(lg)
+			.owl-carousel
+				padding: 1.5rem 0rem
+			.owl-theme
+				.owl-dots
+					+pos(abs, 70% null null 48%)
+					.owl-dot
+						span
+							width: 20px
+							height: 5px
+							margin: 5px 7px
+							background: #D6D6D6
+							display: block
+							-webkit-backface-visibility: visible
+							transition: opacity .2s ease
+							border-radius: 30px
+					.active
+						span
+							background: rgb(249, 255, 0) !important
+				.item
+					background-size: auto
+					.text
+						+pos(abs, 2.3rem null null 13.5%)
+						h2
+							font-size: 2.8rem
+							padding: .1rem 2rem
+						a
+							padding: .6rem 3rem
+							font-size: 1.4rem
+							font-weight: 300
+							text-decoration: none
+							&:hover
+								border: 3px solid rgba(149, 153, 157, 0.85)
+								box-sizing: border-box
+								transition: all ease-in-out .5s
+	.maykhoan-service
+		background: #000
+		min-height: 500px
+		.text1
+			display: flex
+			justify-content: center
+			align-items: center
+			text-align: center
+			h2
+				color: #fff
+				font-size: 1.5rem
+				position: relative
+				&:after
+					content: ''
+					width: 3rem
+					height: 1px
+					background: #fff
+					+pos(abs, 45% null null -22%)
+				&:before
+					content: ''
+					width: 3rem
+					height: 1px
+					background: #fff
+					+pos(abs, 45% -22% null null)
+		+media-breakpoint-up(sm)
+			.text1
+				h2
+					&:after
+						width: 17rem
+						+pos(abs, 45% null null -116%)
+					&:before
+						width: 17rem
+						+pos(abs, 45% -116% null null )
+		+media-breakpoint-up(lg)
+			.text1
+				h2
+					&:after
+						width: 31rem
+						+pos(abs, 45% null null -210%)
+					&:before
+						width: 31rem
+						+pos(abs, 45% -210% null null )
+		.text2
+			display: flex
+			justify-items: center
+			align-items: center
+			text-align: center
+			a
+				figure
+					img
+						filter: grayscale(100%)
+					figcaption
+						padding-top: .5rem
+						h5
+							color: #fff
+							font-weight: 600
+						span
+							color: $border
+							font-weight: 600
+				&:hover
+					text-decoration: none
+		+media-breakpoint-up(sm)
+			a
+				figure
+					width: 100%
+					padding: 0rem
+					.item
+						position: relative
+						&:before
+							content: ''
+							display: block
+							position: absolute
+							height: 100%
+							width: 100%
+							z-index: 1
+					figcaption
+						text-align: left
+				&:hover
+					figure
+						.item
+							&:before
+								box-shadow: 0 0 0 3px rgb(255, 255, 0) inset
+								transition: all ease-in-out 1s
+						img
+							filter: grayscale(0%)
+						figcaption
+							h5
+								color: rgb(255, 255, 0)
+							span
+								color:  rgb(20, 223, 187)
+		.text3
+			.col
+				.item
+					background-image: url(https://raw.githubusercontent.com/thanhtam282/GYM_club_web/master/dist/img/home_panel_3.png)
+					background-repeat: no-repeat
+					background-size: cover
+					background-position: center center
+					min-height: 200px
+					box-shadow: 0 0 0 3px #fff
+					margin-bottom: 1rem
+					position: relative
+					display: flex
+					justify-content: center
+					align-items: center
+					text-align: center
+					.title
+						h3
+							background: #000
+							color: #ffffff
+							padding: .5rem
+							+pos(abs, 50% null null 9%)
+					.title2
+						p
+							background: yellow
+							color: #000
+							padding: 0.1rem
+							+pos(abs, 67% null null 26%)
+					.box
+						width: 50px
+						height: 50px
+						border-radius: 50%
+						background: #000
+						+pos(abs, 2% null null 83%)
+						.box1
+							p
+								color: yellow
+								font-size: .8rem
+								+pos(abs, 18% null null 23%)
+						.box2
+							p
+								color: yellow
+								font-size: .8rem
+								+pos(abs, 44% null null 29%)
+		+media-breakpoint-up(sm)
+			.text3
+				.col
+					.item
+						min-height: 500px
+						.title
+							h3
+								font-size: 3rem
+								font-weight: 600
+								padding: 0.5rem
+								padding-bottom: 1.5rem
+								+pos(abs, 66% null null 31%)
+						.title2
+							p
+								font-weight: 600
+								font-size: 2rem
+								padding: 0.5rem
+								+pos(abs, 79% null null 38%)
+						.box
+							width: 60px
+							height: 60px
+							border-radius: 50%
+							background: #000
+							+pos(abs, 6% null null 93%)
+							.box1
+								p
+									font-size: 1rem
+									+pos(abs, 18% null null 23%)
+							.box2
+								p
+									font-size: 1rem
+									+pos(abs, 46% null null 28%)
+		.text4
+			figure
+				.img-fluid
+					box-shadow: 0 0 0 3px #fff
+			.text-bot
+				position: relative
+				margin-top: 1.8rem
+				margin-bottom: 1.6rem
+				.bot-1
+					background: rgb(121, 116, 116)
+					color: #fff
+					font-size: 1.7rem
+					width: 20rem
+					box-shadow: 0 0 0 3px yellow
+					text-align: center
+					padding: 1%
+					+pos(abs, -9% null null 9%)
+				.bot-2
+					font-size: 1.1rem;
+					color: #fff
+					text-align: center
+					box-shadow: 0 0 0 3px yellow
+					p
+						padding: 9% 2rem
+		+media-breakpoint-up(md)
+			.text4
+				.text-bot
+					.bot-1
+						+pos(abs, -13% null null 30%)
+					.bot-2
+						font-size: 1.4rem
+						height: 208px
+						p
+							padding: 6% 5rem
+	.maykhoan-show
+		background: #000
+		min-height: auto
+		.item
+			display: flex
+			justify-content: center
+			align-items: center
+			padding-bottom: .5rem
+			.owl-theme
+				.item1
+					a
+						figure
+							img
+								opacity: 0.5
+		+media-breakpoint-up(md)
+			.item
+				.owl-theme
+					position: relative
+					.item1
+						a
+							figure
+								img
+									&:hover
+										opacity: 1
+										transition: all ease-in-out .5s
+					.owl-nav
+						display: block
+						button
+							width: 25px;
+							height: 25px;
+							background: #fff;
+							color: #000;
+							&:hover
+								background: yellow
+								transition: all ease-in-out 1s
+						.owl-prev
+							+pos(abs, 22% null null -3%)
+						.owl-next
+							+pos(abs, 22% -3% null null)
+							i
+								font-size: .7rem
