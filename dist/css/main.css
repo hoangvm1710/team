@@ -6394,10 +6394,10 @@ footer {
         right: 10%; }
         footer .icon .col ul li a i.fa.fa-twitter:hover {
           background: yellow;
-          transition: all ease-in-out 1s; }
+          transition: all ease-in-out .5s; }
         footer .icon .col ul li a i.fa.fa-facebook:hover {
           background: yellow;
-          transition: all ease-in-out 1s; } }
+          transition: all ease-in-out .5s; } }
   footer .bot {
     background: yellow;
     min-height: 100px; }
@@ -6408,19 +6408,27 @@ footer {
       text-align: center; }
       footer .bot .row .col-sm.col-md-8 {
         position: absolute;
-        top: 148%; }
+        top: 130%; }
       footer .bot .row .col-sm.col-md-4 {
         position: absolute;
         top: 35%;
-        right: 17%;
-        width: 70%; }
-        footer .bot .row .col-sm.col-md-4 p {
+        right: 10%;
+        width: 80%; }
+        footer .bot .row .col-sm.col-md-4 .form .mail .form-control {
           background: #000;
-          color: #fff;
-          width: 105%;
-          padding: .5rem; }
-          footer .bot .row .col-sm.col-md-4 p button {
-            margin-left: 42%; }
+          color: #fff; }
+          footer .bot .row .col-sm.col-md-4 .form .mail .form-control:focus {
+            border-color: #000;
+            outline: 0;
+            box-shadow: none; }
+        footer .bot .row .col-sm.col-md-4 .form .mail button {
+          position: absolute;
+          top: 10%;
+          right: 6%;
+          width: 25%;
+          font-weight: 600; }
+          footer .bot .row .col-sm.col-md-4 .form .mail button:focus {
+            outline: none; }
   @media (min-width: 768px) {
     footer .bot {
       min-height: 80px; }
@@ -6433,16 +6441,19 @@ footer {
         top: 42%;
         right: 1%;
         width: 100%; }
-        footer .bot .row .col-sm.col-md-4 p {
-          padding: .5rem;
-          text-align: left; }
-          footer .bot .row .col-sm.col-md-4 p button {
-            margin-left: 54%;
-            width: 5rem;
-            font-weight: 700; }
-            footer .bot .row .col-sm.col-md-4 p button:hover {
-              background: yellow;
-              transition: all ease-in-out 1s; } }
+        footer .bot .row .col-sm.col-md-4 .form .mail .form-control {
+          height: calc(2.8rem + 2px); }
+        footer .bot .row .col-sm.col-md-4 .form .mail button {
+          position: absolute;
+          top: 13%;
+          right: 5%;
+          width: 20%;
+          font-size: 1.2rem;
+          font-weight: 500; }
+          footer .bot .row .col-sm.col-md-4 .form .mail button:hover {
+            background: yellow;
+            border-color: rgba(255, 255, 0, 0.59);
+            transition: all ease-in-out .5s; } }
 
 body {
   font-family: 'Lato', sans-serif; }
@@ -6479,10 +6490,19 @@ body {
       font-size: 1.2rem;
       background-color: rgba(14, 14, 14, 0.15); }
     body .maykhoan-banner .item .container button {
-      width: 10rem; }
-      body .maykhoan-banner .item .container button:hover {
-        background-color: #f8f9fa;
-        border-color: #f8f9fa; }
+      width: 20rem;
+      height: 3.5rem;
+      border: 0 solid;
+      background: #000;
+      color: #fff;
+      font-size: 1.3rem;
+      font-weight: 600;
+      box-shadow: inset 0 0 20px rgba(233, 236, 12, 0.15);
+      outline: 1px solid;
+      outline-color: #f3f611;
+      outline-offset: 0px;
+      text-shadow: none;
+      transition: all ease-in-out 0.6s cubic-bezier(0.19, 1, 0.22, 1); }
       body .maykhoan-banner .item .container button:focus {
         box-shadow: none !important; }
       body .maykhoan-banner .item .container button:active {
@@ -6503,7 +6523,15 @@ body {
       body .maykhoan-banner .item .container .row {
         position: absolute;
         top: 12rem;
-        left: 15.2rem; } }
+        left: 15.2rem; }
+        body .maykhoan-banner .item .container .row .col-10 button:hover {
+          border: 1px solid;
+          border-color: yellow;
+          box-shadow: inset 0 0 20px rgba(225, 251, 4, 0.25), 0 0 20px rgba(246, 232, 18, 0.62);
+          outline-color: rgba(202, 14, 14, 0);
+          outline-offset: 15px;
+          text-shadow: 1px 1px 2px #014df4;
+          transition: all ease-in-out .6s; } }
   body .maykhoan-slider {
     background: #000;
     min-height: 200px; }
@@ -6820,7 +6848,7 @@ body {
             color: #000; }
             body .maykhoan-show .item .owl-theme .owl-nav button:hover {
               background: yellow;
-              transition: all ease-in-out 1s; }
+              transition: all ease-in-out .3s; }
           body .maykhoan-show .item .owl-theme .owl-nav .owl-prev {
             position: absolute;
             top: 22%;

@@ -54,11 +54,11 @@ footer
 							i.fa.fa-twitter
 								&:hover
 									background: yellow
-									transition: all ease-in-out 1s
+									transition: all ease-in-out .5s
 							i.fa.fa-facebook
 								&:hover
 									background: yellow
-									transition: all ease-in-out 1s
+									transition: all ease-in-out .5s
 	.bot
 		background: yellow
 		min-height: 100px
@@ -68,17 +68,25 @@ footer
 			justify-content: center
 			text-align: center
 			.col-sm.col-md-8
-				+pos(abs, 148% null null null)
+				+pos(abs, 130% null null null)
 			.col-sm.col-md-4
-				+pos(abs, 35% 17% null null)
-				width: 70%
-				p
-					background: #000
-					color: #fff
-					width: 105%
-					padding: .5rem
-					button
-						margin-left: 42%
+				+pos(abs, 35% 10% null null)
+				width: 80%
+				.form
+					.mail
+						.form-control
+							background: #000
+							color: #fff
+							&:focus
+								border-color: #000
+								outline: 0
+								box-shadow: none
+						button
+							+pos(abs, 10% 6% null)
+							width: 25%
+							font-weight: 600
+							&:focus
+								outline: none
 	+media-breakpoint-up(md)
 		.bot
 			min-height: 80px
@@ -88,16 +96,21 @@ footer
 				.col-sm.col-md-4
 					+pos(abs, 42% 1% null null)
 					width: 100%
-					p
-						padding: .5rem
-						text-align: left
-						button
-							margin-left: 54%
-							width: 5rem
-							font-weight: 700
-							&:hover
-								background: yellow
-								transition: all ease-in-out 1s
+					.form
+						.mail
+							.form-control
+								height: calc(2.8rem + 2px)
+							button
+								+pos(abs, 13% 5% null null)
+								width: 20%
+								font-size: 1.2rem
+								font-weight: 500
+								&:hover
+									background: rgb(255, 255, 0)
+									border-color: rgba(255, 255, 0, 0.59)
+									transition: all ease-in-out .5s
+
+    							
 
 				
 

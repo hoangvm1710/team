@@ -35,10 +35,19 @@ body
 					font-size: 1.2rem
 					background-color: rgba(14, 14, 14, 0.15)
 				button
-					width: 10rem
-					&:hover
-						background-color: #f8f9fa
-						border-color: #f8f9fa
+					width: 20rem
+					height: 3.5rem
+					border: 0 solid
+					background: #000
+					color: #fff
+					font-size: 1.3rem
+					font-weight: 600
+					box-shadow: inset 0 0 20px rgba(233, 236, 12, 0.15)
+					outline: 1px solid
+					outline-color: rgb(243, 246, 17)
+					outline-offset: 0px
+					text-shadow: none
+					transition: all ease-in-out .6s cubic-bezier(0.19, 1, 0.22, 1)
 					&:focus
 						box-shadow: none !important
 					&:active
@@ -58,6 +67,16 @@ body
 				.container
 					.row
 						+pos(abs, 12rem null null 15.2rem)
+						.col-10
+							button
+								&:hover
+									border: 1px solid
+									border-color: yellow
+									box-shadow: inset 0 0 20px rgba(225, 251, 4, 0.25), 0 0 20px rgba(246, 232, 18, 0.62)
+									outline-color: rgba(202, 14, 14, 0)
+									outline-offset: 15px
+									text-shadow: 1px 1px 2px #014df4
+									transition: all ease-in-out .6s 
 	.maykhoan-slider
 		background: #000
 		min-height: 200px
@@ -371,7 +390,7 @@ body
 							color: #000;
 							&:hover
 								background: yellow
-								transition: all ease-in-out 1s
+								transition: all ease-in-out .3s
 						.owl-prev
 							+pos(abs, 22% null null -3%)
 						.owl-next
